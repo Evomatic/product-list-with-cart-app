@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  build: # this can be any name you choose
+  build:
     docker:
       - image: node:18
     resource_class: large
@@ -14,15 +14,13 @@ jobs:
           keys:
             - pnpm-packages-{{ checksum "pnpm-lock.yaml" }}
       - run:
-          name: Install pnpm package manager
+          name: Install pnpm Manually (Bypass Corepack)
           command: |
-            corepack enable
-            corepack prepare pnpm@latest-10 --activate
+            npm install -g pnpm@8  # Use a stable version instead of Corepack
             pnpm config set store-dir .pnpm-store
       - run:
           name: Install Dependencies
-          command: |
-            pnpm install
+          command: pnpm install
       - save_cache:
           name: Save pnpm Package Cache
           key: pnpm-packages-{{ checksum "pnpm-lock.yaml" }}
