@@ -31,60 +31,58 @@ const theme: DefaultTheme = {
     w700: 700,
   },
   typography: {
-    typography: {
-      preset1: {
-        fontFamily: "'Red Hat Text', sans-serif",
-        fontWeight: "bold",
-        fontSize: "40px",
-        lineHeight: "120%",
-        letterSpacing: "0px",
-      },
-      preset2: {
-        fontFamily: "'Red Hat Text', sans-serif",
-        fontWeight: "bold",
-        fontSize: "24px",
-        lineHeight: "125%",
-        letterSpacing: "0px",
-      },
-      preset3: {
-        fontFamily: "'Red Hat Text', sans-serif",
-        fontWeight: "600", // Semi Bold
-        fontSize: "16px",
-        lineHeight: "150%",
-        letterSpacing: "0px",
-      },
-      preset4: {
-        fontFamily: "'Red Hat Text', sans-serif",
-        fontWeight: "400", // Regular
-        fontSize: "14px",
-        lineHeight: "150%",
-        letterSpacing: "0px",
-      },
-      preset4Bold: {
-        fontFamily: "'Red Hat Text', sans-serif",
-        fontWeight: "600", // Semi Bold
-        fontSize: "14px",
-        lineHeight: "150%",
-        letterSpacing: "0px",
-      },
+    preset1: {
+      fontFamily: "'Red Hat Text', sans-serif",
+      fontWeight: "bold",
+      fontSize: "40px",
+      lineHeight: "120%",
+      letterSpacing: "0px",
     },
-    spacing: {
-      1100: "88px",
-      500: "40px",
-      400: "32px",
-      300: "24px",
-      200: "16px",
-      150: "12px",
-      100: "8px",
-      50: "4px",
+    preset2: {
+      fontFamily: "'Red Hat Text', sans-serif",
+      fontWeight: "bold",
+      fontSize: "24px",
+      lineHeight: "125%",
+      letterSpacing: "0px",
     },
-    breakpoints: {
-      xs: "480px",
-      sm: "768px",
-      md: "1024px",
-      lg: "1280px",
-      xl: "1440px",
+    preset3: {
+      fontFamily: "'Red Hat Text', sans-serif",
+      fontWeight: "600", // Semi Bold
+      fontSize: "16px",
+      lineHeight: "150%",
+      letterSpacing: "0px",
     },
+    preset4: {
+      fontFamily: "'Red Hat Text', sans-serif",
+      fontWeight: "400", // Regular
+      fontSize: "14px",
+      lineHeight: "150%",
+      letterSpacing: "0px",
+    },
+    preset4Bold: {
+      fontFamily: "'Red Hat Text', sans-serif",
+      fontWeight: "600", // Semi Bold
+      fontSize: "14px",
+      lineHeight: "150%",
+      letterSpacing: "0px",
+    },
+  },
+  spacing: {
+    1100: "88px",
+    500: "40px",
+    400: "32px",
+    300: "24px",
+    200: "16px",
+    150: "12px",
+    100: "8px",
+    50: "4px",
+  },
+  breakpoints: {
+    xs: "480px",
+    sm: "768px",
+    md: "1024px",
+    lg: "1280px",
+    xl: "1440px",
   },
 };
 
