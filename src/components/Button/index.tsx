@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+const CustomButton = ({
+  className,
+  children,
+}: {
+  className: string;
+  children: React.ReactNode;
+}) => <button className={className}>{children}</button>;
+
+export const Button = styled(CustomButton)`
   background-color: ${(props) => props.theme.colors.red};
   font-family: ${(props) => props.theme.typography.preset3.fontfamily};
   font-size: ${(props) => props.theme.typography.preset3.fontSize};
