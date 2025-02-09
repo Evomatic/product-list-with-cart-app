@@ -2,17 +2,23 @@
 // See an order confirmation modal when they click "Confirm Order"
 // Reset their selections when they click "Start New Order"
 // See hover and focus states for all interactive elements on the page
-import { createMachine } from "xstate";
+import { createMachine, assign } from "xstate";
 
-export const productListWithCarMachine = createMachine({
+export const productListWithCartMachine = createMachine({
   id: "productListWithCart",
-  initial: "0",
-  states: {
-    Inactive: {
-      on: { toggle: "Active" },
+  context: {
+    count: 0,
+  },
+  on: {
+    INCREMENT: {
+      actions: assign({
+        count: ({ context }) => context.count + 1,
+      }),
     },
-    Active: {
-      on: { toggle: "Inactive" },
+    DECREMENT: {
+      actions: assign({
+        count: ({ context }) => context.count - 1,
+      }),
     },
   },
 });
