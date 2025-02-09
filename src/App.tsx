@@ -1,11 +1,17 @@
 import styles from "./app.module.css";
 import { Button } from "./components/Button";
+import { CounterButton } from "./components/CounterButton";
 
 function App() {
   return (
     <div className={styles["app"]}>
-      Hello, this is a test. Is the Red Hat Text working?
-      <Button>Placeholder</Button>
+      {/* <Button>Placeholder</Button> */}
+      <div>
+        <CounterButton
+          minusOnClick={() => console.log("minus")}
+          addOnClick={() => console.log("add")}
+        />
+      </div>
     </div>
   );
 }

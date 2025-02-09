@@ -1,4 +1,13 @@
 .app {
   text-align: center;
+  min-width: 100vw;
   min-height: 100vh;
+  display: flex;
+  display: block;
+  margin: auto;
+  display: grid;
+}
+
+.app div {
+  place-self: center;
 }
