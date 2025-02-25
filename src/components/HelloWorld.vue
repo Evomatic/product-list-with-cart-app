@@ -2,9 +2,7 @@
 // defineProps<{ msg: string }>()
 </script>
 
-<template>
-
-</template>
+<template></template>
 
 <style scoped>
 .read-the-docs {
